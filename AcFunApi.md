@@ -8,6 +8,7 @@
     - [获取关注up视频动态](#获取关注up视频动态)
     - [获取正在直播关注up列表](#获取正在直播关注up列表)
     - [获取视频弹幕列表](#获取视频弹幕列表)
+    - [关注与取消关注](#关注与取消关注)
   - [移动端](#移动端)
     - [登录](#登录)
     - [获取token](#获取token)
@@ -532,6 +533,36 @@
     "host-name": "hb2-acfun-kce-node117.aliyun",
     "totalCount": 952,
     "requestId": "0dae7e8863d340e2a1e6b1f39640e5f9"
+}
+```
+
+</details>
+
+
+
+### 关注与取消关注
+
+请求地址：
+
+>  https://www.acfun.cn/rest/pc-direct/relation/follow
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名   | 值   | 说明                |
+| -------- | ---- | ------------------- |
+| toUserId |      | 关注用户id          |
+| action   |      | 1、关注 2、取消关注 |
+| groupId  |      | 分组                |
+
+<details>
+<summary>查看响应格式示例：</summary>
+
+```json
+{
+    host-name: "hb2-acfun-kce-node33.aliyun"
+    result: 0
 }
 ```
 
