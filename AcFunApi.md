@@ -561,8 +561,65 @@
 
 ```json
 {
-    host-name: "hb2-acfun-kce-node33.aliyun"
+    host-name: "hb2-acfun-kce-node33.aliyun",
     result: 0
+}
+```
+
+</details>
+
+
+
+### 获取香蕉商城商品列表
+
+请求地址：
+
+> https://www.acfun.cn/rest/pc-direct/shop/productList
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名   | 值    | 说明     |
+| -------- | ----- | -------- |
+| pageNo   | 1     | 当前页   |
+| pageSize | 20    | 每页数量 |
+| sortType | 1     | 排序类型 |
+| asc      | false |          |
+
+<details>
+<summary>查看响应格式示例：</summary>
+
+```json
+{
+    "host-name": "hb2-acfun-kce-node146.aliyun",
+    "result": 0,
+    "totalNum": 100,
+    "list": [
+        {
+            "amount": 1500,
+            "coolDownDay": 0,
+            "description": "<span style=\"font-family: system-ui, -apple-system, system-ui, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px; font-variant-ligatures: normal; orphans: 2; white-space: pre-wrap; widows: 2; background-color: rgb(235, 236, 240);\">C137宇宙发廊为莫蒂设计的新发型</span>",
+            "expireTime": 2527257600000,
+            "imageAppUrl": "https://imgs.aixifan.com/3WU60arjBn-7bymEv-nUji2q-73yi6f-2yQV7z.gif",
+            "imagePCUrl": "https://imgs.aixifan.com/2lzfSmZLbA-viemyu-6b2Uf2-IFZrqq-qE7rQn.gif",
+            "imageUrl": "https://imgs.aixifan.com/3WU60arjBn-7bymEv-nUji2q-73yi6f-2yQV7z.gif",
+            "levelLimit": 0,
+            "maxAllowBuy": 1,
+            "priceInfo": [
+                {
+                    "payType": 2,
+                    "payTypeInfo": "金香蕉",
+                    "count": 499
+                }
+            ],
+            "productId": 630,
+            "sales": 903,
+            "status": 1,
+            "title": "莫蒂的新发型",
+            "type": 2
+        }
+    ]
 }
 ```
 
