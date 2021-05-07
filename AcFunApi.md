@@ -10,6 +10,9 @@
     - [获取视频弹幕列表](#获取视频弹幕列表)
     - [关注与取消关注](#关注与取消关注)
     - [获取香蕉商城商品列表](#获取香蕉商城商品列表)
+    - [获取守护徽章](#获取守护徽章)
+    - [佩戴守护徽章](#佩戴守护徽章)
+    - [取消佩戴守护徽章](#取消佩戴守护徽章)
   - [移动端](#移动端)
     - [登录](#登录)
     - [获取token](#获取token)
@@ -621,6 +624,97 @@
             "type": 2
         }
     ]
+}
+```
+
+</details>
+
+
+
+### 获取守护徽章
+
+请求地址：
+
+>  https://www.acfun.cn/rest/pc-direct/fansClub/fans/medal/list
+
+请求方式：`post`
+
+请求参数：无
+
+<details>
+<summary>查看响应格式示例：</summary>
+
+```json
+{
+    "result": 0,
+    "medalList": [
+        {
+            "clubName": "人传人",
+            "friendshipDegree": 32066,
+            "uperId": 156843,
+            "joinClubTime": 1601908917910,
+            "wearMedal": true,
+            "uperName": "c137芦苇娘",
+            "uperHeadUrl": "https://tx-free-imgs.acfun.cn/style/image/201907/varjkIG5PMSiP1Bw8HjqlPtLENjDOyZb.jpg?imageslim",
+            "currentDegreeLimit": 48887,
+            "level": 12
+        }
+    ],
+    "host-name": "hb2-acfun-kce-node60.aliyun"
+}
+```
+
+</details>
+
+
+
+### 佩戴守护徽章
+
+请求地址：
+
+>  https://www.acfun.cn/rest/pc-direct/fansClub/fans/medal/wear
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名 | 值   | 说明 |
+| ------ | ---- | ---- |
+| uperId |      | upid |
+
+<details>
+<summary>查看响应格式示例：</summary>
+```json
+{
+    "result": 0,
+    "host-name": "hb2-acfun-kce-node33.aliyun"
+}
+```
+
+</details>
+
+
+
+### 取消佩戴守护徽章
+
+请求地址：
+
+>  https://www.acfun.cn/rest/pc-direct/fansClub/fans/medal/cancelWear
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名 | 值   | 说明 |
+| ------ | ---- | ---- |
+| uperId |      | upid |
+
+<details>
+<summary>查看响应格式示例：</summary>
+```json
+{
+    "result": 0,
+    "host-name": "hb2-acfun-kce-node146.aliyun"
 }
 ```
 
