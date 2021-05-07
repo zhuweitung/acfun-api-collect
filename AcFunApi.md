@@ -684,6 +684,7 @@
 
 <details>
 <summary>查看响应格式示例：</summary>
+
 ```json
 {
     "result": 0,
@@ -711,6 +712,7 @@
 
 <details>
 <summary>查看响应格式示例：</summary>
+
 ```json
 {
     "result": 0,
