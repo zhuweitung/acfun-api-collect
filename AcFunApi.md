@@ -13,6 +13,7 @@
     - [获取守护徽章](#获取守护徽章)
     - [佩戴守护徽章](#佩戴守护徽章)
     - [取消佩戴守护徽章](#取消佩戴守护徽章)
+    - [获取表情包](#获取表情包)
   - [移动端](#移动端)
     - [登录](#登录)
     - [获取token](#获取token)
@@ -717,6 +718,143 @@
 {
     "result": 0,
     "host-name": "hb2-acfun-kce-node146.aliyun"
+}
+```
+
+</details>
+
+
+
+### 获取表情包
+
+请求地址：
+
+> https://zt.gifshow.com/rest/zt/emoticon/package/list
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名 | 值        | 说明 |
+| ------ | --------- | ---- |
+| kpn    | ACFUN_APP |      |
+
+<details>
+<summary>查看响应格式示例：</summary>
+
+
+```json
+{
+    "result": 1,
+    "emotionPackageList": [
+        {
+            "emotions": [
+                {
+                    "emotionImageSmallUrl": [
+                        {
+                            "cdn": "ali2.a.yximgs.com",
+                            "url": "https://ali2.a.yximgs.com/bs2/emotion/1587040894618third_party_s35465986.png"
+                        },
+                        {
+                            "cdn": "tx2.a.yximgs.com",
+                            "url": "https://tx2.a.yximgs.com/bs2/emotion/1587040894618third_party_s35465986.png"
+                        }
+                    ],
+                    "emotionImageBigUrl": [
+                        {
+                            "cdn": "tx2.a.yximgs.com",
+                            "url": "https://tx2.a.yximgs.com/bs2/emotion/1587040894630third_party_b35465986.png"
+                        },
+                        {
+                            "cdn": "ali2.a.yximgs.com",
+                            "url": "https://ali2.a.yximgs.com/bs2/emotion/1587040894630third_party_b35465986.png"
+                        }
+                    ],
+                    "name": "blink",
+                    "id": "5xk786xu6mdg5ju",
+                    "type": 2,
+                    "bizType": 0,
+                    "height": 100,
+                    "width": 100,
+                    "packageId": "5xduywgdcm3h9xe",
+                    "emotionCodes": [
+                        {
+                            "language": "zh_CN",
+                            "codes": []
+                        },
+                        {
+                            "language": "zh_TW",
+                            "codes": []
+                        },
+                        {
+                            "language": "en_US",
+                            "codes": []
+                        }
+                    ],
+                    "extraInfo": {}
+                }
+            ],
+            "packageDownloadUrl": [
+                {
+                    "cdn": "js2.a.yximgs.com",
+                    "url": "https://js2.a.yximgs.com/bs2/emotion/15855555487635xwypqe4k45dxzg.zip"
+                },
+                {
+                    "cdn": "ali2.a.yximgs.com",
+                    "url": "https://ali2.a.yximgs.com/bs2/emotion/15855555487635xwypqe4k45dxzg.zip"
+                }
+            ],
+            "style": "混合",
+            "packageImageSmallUrl": [
+                {
+                    "cdn": "ali2.a.yximgs.com",
+                    "url": "https://ali2.a.yximgs.com/bs2/emotion/1585555548663_195002icon.png"
+                },
+                {
+                    "cdn": "tx2.a.yximgs.com",
+                    "url": "https://tx2.a.yximgs.com/bs2/emotion/1585555548663_195002icon.png"
+                }
+            ],
+            "packageImageMiddleUrl": [
+                {
+                    "cdn": "tx2.a.yximgs.com",
+                    "url": "https://tx2.a.yximgs.com/bs2/emotion/1585555548669_195002cover.png"
+                },
+                {
+                    "cdn": "ali2.a.yximgs.com",
+                    "url": "https://ali2.a.yximgs.com/bs2/emotion/1585555548669_195002cover.png"
+                }
+            ],
+            "packageImageBigUrl": [
+                {
+                    "cdn": "js2.a.yximgs.com",
+                    "url": "https://js2.a.yximgs.com/bs2/emotion/1585555548669_195002cover.png"
+                },
+                {
+                    "cdn": "ali2.a.yximgs.com",
+                    "url": "https://ali2.a.yximgs.com/bs2/emotion/1585555548669_195002cover.png"
+                }
+            ],
+            "packageBannerUrl": [
+                {
+                    "cdn": "ali2.a.yximgs.com",
+                    "url": "https://ali2.a.yximgs.com/bs2/emotion/1585555548676_195002banner.jpeg"
+                },
+                {
+                    "cdn": "tx2.a.yximgs.com",
+                    "url": "https://tx2.a.yximgs.com/bs2/emotion/1585555548676_195002banner.jpeg"
+                }
+            ],
+            "description": "",
+            "name": "TD猫",
+            "id": "5xwypqe4k45dxzg",
+            "type": 3,
+            "extraInfo": {
+                "tab_use_icon": "true"
+            },
+            "introduction": ""
+        }
+    ]
 }
 ```
 
