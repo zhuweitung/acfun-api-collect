@@ -14,6 +14,7 @@
     - [佩戴守护徽章](#佩戴守护徽章)
     - [取消佩戴守护徽章](#取消佩戴守护徽章)
     - [获取表情包](#获取表情包)
+    - [播放历史](#播放历史)
   - [移动端](#移动端)
     - [登录](#登录)
     - [获取token](#获取token)
@@ -855,6 +856,127 @@
             "introduction": ""
         }
     ]
+}
+```
+
+</details>
+
+
+
+### 播放历史
+
+请求地址：
+
+> https://www.acfun.cn/rest/pc-direct/browse/history/list
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名        | 值   | 说明 |
+| ------------- | ---- | ---- |
+| pageNo        | 1    |      |
+| pageSize      | 20   |      |
+| resourceTypes | 1    |      |
+| resourceTypes | 2    |      |
+
+<details>
+<summary>查看响应格式示例：</summary>
+
+
+```json
+{
+    "result": 0,
+    "pageSize": 20,
+    "histories": [
+        {
+            "disable": false,
+            "groupId": null,
+            "intro": "",
+            "browseTime": 1620547098256,
+            "playedSeconds": 574,
+            "resourceType": 2,
+            "videoId": 24233958,
+            "commentCount": 0,
+            "comboId": 562949981995543,
+            "resourceId": 28574231,
+            "cover": "https://imgs.aixifan.com/o_1f57puag51aia2mif4rrejaad0.jpeg",
+            "viewCount": 0,
+            "platform": 10,
+            "user": {
+                "action": 3,
+                "href": "1378726",
+                "isFollowing": false,
+                "followingStatus": 1,
+                "contributeCount": "2428",
+                "comeFrom": "湖北,武汉",
+                "sexTrend": -1,
+                "followingCount": "23",
+                "avatarFrameMobileImg": "https://imgs.aixifan.com/cms/2019_07_10/1562742186617.gif",
+                "avatarFramePcImg": "https://imgs.aixifan.com/cms/2019_07_10/1562742200952.gif",
+                "nameColor": 1,
+                "verifiedTypes": [
+                    2,
+                    5
+                ],
+                "avatarFrame": 358,
+                "headUrl": "https://tx-free-imgs.acfun.cn/style/image/201907/jT1QXghZtQq8syKtNJruwvjf3CEQs6SR.jpg?imageslim",
+                "fanCountValue": 170985,
+                "verifiedType": 2,
+                "verifiedText": "LOL韩服王者斗殴局",
+                "gender": 1,
+                "avatarImage": "https://tx-free-imgs.acfun.cn/cms/2019_07_10/1562742200952.gif?imageslim",
+                "userHeadImgInfo": {
+                    "width": 0,
+                    "height": 0,
+                    "size": 0,
+                    "type": 0,
+                    "thumbnailImage": {
+                        "cdnUrls": [
+                            {
+                                "url": "https://tx-free-imgs.acfun.cn/style/image/201907/jT1QXghZtQq8syKtNJruwvjf3CEQs6SR.jpg?imageslim",
+                                "freeTrafficCdn": false
+                            }
+                        ]
+                    }
+                },
+                "headCdnUrls": [
+                    {
+                        "url": "https://tx-free-imgs.acfun.cn/style/image/201907/jT1QXghZtQq8syKtNJruwvjf3CEQs6SR.jpg?imageslim",
+                        "freeTrafficCdn": true
+                    },
+                    {
+                        "url": "https://imgs.aixifan.com/style/image/201907/jT1QXghZtQq8syKtNJruwvjf3CEQs6SR.jpg?imageslim",
+                        "freeTrafficCdn": false
+                    }
+                ],
+                "isJoinUpCollege": true,
+                "followingCountValue": 23,
+                "contributeCountValue": 2428,
+                "fanCount": "17.1万",
+                "name": "一只撸狗",
+                "signature": "菠菜广告勿扰，谢谢大家的支持，早点睡诸位.Q群：572799410",
+                "id": "1378726"
+            },
+            "title": "快速看完2021MSI季中冠军赛Day3",
+            "dougaVideoTitle": "IW vs PSG ",
+            "dougaTotalVideoCount": 6,
+            "bangumiItemTitle": "",
+            "bangumiItemEpisodeName": "",
+            "bangumiItemCover": "",
+            "playedSecondsShow": "已看完",
+            "durationSecondsShow": "07:26",
+            "browseTimeGroup": 1,
+            "itemId": 0,
+            "viewCountShow": "0",
+            "commentCountShow": "0",
+            "durationSeconds": 446,
+            "priority": 0
+        }
+    ],
+    "host-name": "hb2-acfun-kce-node114.aliyun",
+    "totalCount": 210,
+    "pageNo": 1
 }
 ```
 
