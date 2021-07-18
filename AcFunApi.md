@@ -15,13 +15,17 @@
     - [取消佩戴守护徽章](#取消佩戴守护徽章)
     - [获取表情包](#获取表情包)
     - [播放历史](#播放历史)
-  - [移动端](#移动端)
-    - [登录](#登录)
-    - [获取token](#获取token)
     - [每日香蕉榜](#每日香蕉榜)
     - [每日签到](#每日签到)
     - [发弹幕](#发弹幕)
     - [视频投蕉](#视频投蕉)
+  - [移动端](#移动端)
+    - [登录](#登录)
+    - [获取token](#获取token)
+    - [~~每日香蕉榜2~~](#每日香蕉榜2)
+    - [~~每日签到2~~](#每日签到2)
+    - [~~发弹幕2~~](#发弹幕2)
+    - [~~视频投蕉2~~](#视频投蕉2)
     - [视频点赞/取消点赞（pc、web通用）](#视频点赞取消点赞pcweb通用)
     - [视频分享](#视频分享)
 
@@ -987,6 +991,110 @@
 
 
 
+### 每日香蕉榜
+
+请求地址：
+
+>  https://www.acfun.cn/rest/pc-direct/rank/channel
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名     | 值   | 说明 |
+| ---------- | ---- | ---- |
+| channelId  | 0    |      |
+| rankPeriod | DAY  |      |
+
+请求头：
+
+```json
+{
+    "Content-Type": "application/x-www-form-urlencoded",
+}
+```
+
+响应格式同移动端[每日香蕉榜](#每日香蕉榜)
+
+
+
+### 每日签到
+
+请求地址：
+
+>  https://www.acfun.cn/rest/pc-direct/user/signIn
+
+请求方式：`post`
+
+请求参数：无
+
+响应格式同移动端[每日签到](#每日签到2)
+
+
+
+### 发弹幕
+
+请求地址：
+
+> https://www.acfun.cn/rest/pc-direct/new-danmaku/add
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名         | 值       | 说明                                                         |
+| -------------- | -------- | ------------------------------------------------------------ |
+| body           | 测试     | 弹幕内容                                                     |
+| color          | 16777215 | 弹幕颜色                                                     |
+| id             | 17784502 | ac号，详见香蕉榜响应格式中`rankList[0].contentId`            |
+| mode           | 1        | 弹幕滚动方式呈现                                             |
+| position       | 1000     | 弹幕发送距视频开始时间                                       |
+| size           | 25       | 弹幕大小                                                     |
+| subChannelId   | 1        | 子频道号，详见香蕉榜响应格式中`rankList[0].channel.parentId` |
+| subChannelName | 动画     | 子频道名称，详见香蕉榜响应格式中`rankList[0].channel.parentName` |
+| type           | douga    | 类型，固定为douga                                            |
+| videoId        | 14177057 | 视频id，详见香蕉榜响应格式中`rankList[0].videoList[0].id`    |
+
+请求头：
+
+```json
+{
+    "referer": "https://www.acfun.cn/v/ac**",
+}
+```
+
+响应格式同移动端[发弹幕](#发弹幕2)
+
+
+
+### 视频投蕉
+
+请求地址：
+
+> https://api-ipv6.acfunchina.com/rest/app/banana/throwBanana
+
+请求方式：`post`
+
+请求参数：
+
+| 参数名       | 值       | 说明      |
+| ------------ | -------- | --------- |
+| resourceId   | 17784502 | ac号      |
+| count        | 5        | 投蕉数1~5 |
+| resourceType | 2        | 固定值    |
+
+请求头：
+
+```json
+{
+    "referer": "https://www.acfun.cn/v/ac**",
+}
+```
+
+响应格式同移动端[视频投蕉](#视频投蕉2)
+
+
+
 ## 移动端
 
 ### 登录
@@ -1089,7 +1197,7 @@ acPasstoken和auth_key
 
 
 
-### 每日香蕉榜
+### ~~每日香蕉榜2~~
 
 请求地址：
 
@@ -1394,7 +1502,7 @@ acPasstoken和auth_key
 
 
 
-### 每日签到
+### ~~每日签到2~~
 
 请求地址：
 
@@ -1438,7 +1546,7 @@ acPasstoken和auth_key
 
 
 
-### 发弹幕
+### ~~发弹幕2~~
 
 请求地址：
 
@@ -1484,7 +1592,7 @@ acPasstoken和auth_key
 
 
 
-### 视频投蕉
+### ~~视频投蕉2~~
 
 请求地址：
 
