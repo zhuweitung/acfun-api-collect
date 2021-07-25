@@ -19,6 +19,7 @@
     - [每日签到](#每日签到)
     - [发弹幕](#发弹幕)
     - [视频投蕉](#视频投蕉)
+    - [用户搜索](#用户搜索)
   - [移动端](#移动端)
     - [登录](#登录)
     - [获取token](#获取token)
@@ -1092,6 +1093,79 @@
 ```
 
 响应格式同移动端[视频投蕉](#视频投蕉2)
+
+
+
+### 用户搜索
+
+请求地址：
+
+> https://www.acfun.cn/rest/pc-direct/search/user
+
+请求方式：`get`
+
+请求参数：
+
+| 参数名  | 值   | 说明                |
+| ------- | ---- | ------------------- |
+| keyword |      | 用户名称，UrlEncode |
+
+
+<details>
+<summary>查看响应格式示例：</summary>
+
+```json
+{
+    "result": 0,
+    "userList": [
+        {
+            "userId": 1342385,
+            "groupId": "OV82MjU3MjRfMTYyNzE4MTk0MDIzOF_pvpnppo3ppo1fMjgyOA_0_1&-124&&sru",
+            "emTitle": "<em>龙馍馍</em>",
+            "userImg": "https://tx-free-imgs.acfun.cn/FqoO6kf9__24wnYKI7hCx5Alr_dB?imageslim",
+            "verifiedType": 0,
+            "signStatus": true,
+            "fansCount": 18730,
+            "contentCount": 2582,
+            "verifiedTypes": [
+                5
+            ],
+            "isFollowing": true,
+            "pubDougaCount": "1838",
+            "dougaFeedList": [
+                {
+                    "contentId": "30366817",
+                    "caption": "《动物治愈行为大赏➋➎》",
+                    "videoId": "25637424",
+                    "coverUrls": [
+                        "https://tx-free-imgs.acfun.cn/newUpload/1342385_a1db0f9c095543c4b1b8ba176e667936.jpeg?imageslim"
+                    ],
+                    "playDuration": "03:43",
+                    "contributeTime": "2021-07-24",
+                    "description": "喜欢请投蕉啊 ",
+                    "type": 2
+                }
+            ],
+            "subTitle": "最新视频",
+            "userName": "龙馍馍",
+            "id": 1342385,
+            "signature": "真 · 萌次元\n早安机器人\n周一心情拯救者",
+            "fansCountStr": "1.9万",
+            "contentCountStr": "2582",
+            "pubMeowCount": "0",
+            "itemType": 1
+        }
+    ],
+    "totalNum": 2,
+    "requestId": "OV82MjU3MjRfMTYyNzE4MTk0MDIzOF_pvpnppo3ppo1fMjgyOA",
+    "pageSize": 30,
+    "host-name": "hb2-acfun-kce-node17.aliyun",
+    "pageNum": 1
+}
+```
+
+</details>
+
 
 
 
